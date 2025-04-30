@@ -30,7 +30,7 @@ cursor_surface = pygame.Surface((1, 1)).convert()
 cursor_mask = pygame.mask.from_surface(cursor_surface)
 
 # Setting up the red target.
-redtarget_surface = pygame.image.load(RedTarget.png").convert_alpha()
+redtarget_surface = pygame.image.load("RedTarget.png").convert_alpha()
 redtarget_rect = redtarget_surface.get_rect(midright = (-400, 700))
 redtarget_mask = pygame.mask.from_surface(redtarget_surface)
 
