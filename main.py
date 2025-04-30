@@ -15,13 +15,13 @@ pygame.display.set_caption("Target Practice")
 clock = pygame.time.Clock()
 
 # Setting up the main background.
-background = pygame.image.load("graphics/Background.png").convert()
+background = pygame.image.load("Background.png").convert()
 
 # Setting up the font.
 font = pygame.font.Font(None, 50)
 
 # Setting up the restart button.
-button_surface = pygame.image.load("graphics/Button.png").convert()
+button_surface = pygame.image.load("Button.png").convert()
 button_rect = button_surface.get_rect(center = (500, 600))
 button_mask = pygame.mask.from_surface(button_surface)
 
@@ -30,27 +30,27 @@ cursor_surface = pygame.Surface((1, 1)).convert()
 cursor_mask = pygame.mask.from_surface(cursor_surface)
 
 # Setting up the red target.
-redtarget_surface = pygame.image.load("graphics/RedTarget.png").convert_alpha()
+redtarget_surface = pygame.image.load(RedTarget.png").convert_alpha()
 redtarget_rect = redtarget_surface.get_rect(midright = (-400, 700))
 redtarget_mask = pygame.mask.from_surface(redtarget_surface)
 
 # Setting up the blue target.
-bluetarget_surface = pygame.image.load("graphics/BlueTarget.png").convert_alpha()
+bluetarget_surface = pygame.image.load("BlueTarget.png").convert_alpha()
 bluetarget_rect = bluetarget_surface.get_rect(midright = (-800, 450))
 bluetarget_mask = pygame.mask.from_surface(bluetarget_surface)
 
 # Setting up the yellow target.
-yellowtarget_surface = pygame.image.load("graphics/YellowTarget.png").convert_alpha()
+yellowtarget_surface = pygame.image.load("YellowTarget.png").convert_alpha()
 yellowtarget_rect = yellowtarget_surface.get_rect(midright = (-1600, 100))
 yellowtarget_mask = pygame.mask.from_surface(yellowtarget_surface)
 
 # Setting up and playing music.
-music = pygame.mixer.Sound("audio/music.mp3")
+music = pygame.mixer.Sound("music.mp3")
 music.set_volume(.5)
 music.play(loops = -1)
 
 # Setting up hit sound effect.
-hit_sfx = pygame.mixer.Sound("audio/hit.mp3")
+hit_sfx = pygame.mixer.Sound("hit.mp3")
 hit_sfx.set_volume(.3)
 
 # INPUT: None
